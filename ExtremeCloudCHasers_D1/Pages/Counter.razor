@@ -1,0 +1,68 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+
+<h2>Please place orders on Email or Whatsapp</h2>
+<p role="status">Wants: @currentCount</p>
+<h1></h1>
+
+
+<div>
+    <button class="btn btn-primary"style="background-color:gray" @onclick="IncrementCount">Want one </button>
+    <MudCard Style="width:auto">
+    <MudCardMedia Image="images/v2.jpg" Height="200"  />
+    <MudCardContent>
+        <MudText Typo="Typo.h5">Version 1 </MudText>
+        <MudText Typo="Typo.body2">In stock</MudText>
+        <MudText Typo="Typo.body2">R 260.00</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Share</MudButton>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+    </MudCardActions>
+</MudCard>
+
+</div>
+<div>
+    <button class="btn btn-primary"style="background-color:gray" @onclick="IncrementCount">Want one </button>
+    <MudCard Style="width:auto">
+    <MudCardMedia Image="images/images-29.jpeg" Height="200"  />
+    <MudCardContent>
+        <MudText Typo="Typo.h5">Version 1 </MudText>
+        <MudText Typo="Typo.body2">In stock</MudText>
+        <MudText Typo="Typo.body2">R 260.00</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Share</MudButton>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+    </MudCardActions>
+</MudCard>
+
+</div>
+<div>
+    <button class="btn btn-primary"style="background-color:gray" @onclick="IncrementCount">Want one </button>
+    <MudCard Style="width:auto">
+    <MudCardMedia Image="images/download (1).jpg" Height="200"  />
+    <MudCardContent>
+        <MudText Typo="Typo.h5">Version 1 </MudText>
+        <MudText Typo="Typo.body2">In stock</MudText>
+        <MudText Typo="Typo.body2">R 260.00</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Share</MudButton>
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+    </MudCardActions>
+</MudCard>
+
+</div>
+
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
